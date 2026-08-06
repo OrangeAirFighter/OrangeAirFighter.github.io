@@ -31,7 +31,7 @@ const projects = [
         blurb: "A local-multiplayer 3D brawler built with one other developer across a full year, shipped to Steam.",
         stats: ["Duo project", "~1 year", "Steam"],
         back: "My largest project to date, built with Mad Makers Games. I owned the full art pipeline — 3D and 2D — plus customization systems, UI programming, player-data management, and player animations. Four maps, 15+ weapons, and 36 cosmetic items, supporting up to four local players.",
-        image: "assets/MinMayWebsite.jpg",
+        image: "Assets/MinMayWebsite.jpg",
         link: "https://store.steampowered.com/app/3221220/Mini_Mayhem_Flood_Fighters/"
     },
     {
@@ -42,7 +42,7 @@ const projects = [
         blurb: "Designed and built minigames and a scene system for a client-branded game about local battery storage and energy sustainability.",
         stats: ["Team of 10", "Client project", "Unity"],
         back: "Developed within Totem's Gamification Squad for client Lumosa, a sustainable lighting and energy company. I joined mid-production, improving an existing minigame's functionality and design while building the scene-transition system — with a strong focus on visual polish, VFX, and clear player feedback.",
-        image: "assets/overchargedWebsite",
+        image: "Assets/overchargedWebsite.jpg",
         link: "https://www.dutchgamesindustry.nl/game/overcharged"
     },
     {
@@ -64,7 +64,7 @@ const projects = [
         blurb: "Built a hand-tracked digital aquarium from scratch, then ran the study and co-authored a published paper on the results.",
         stats: ["Solo build", "Published paper", "Python · C++ · C#"],
         back: "My Bachelor End Project, built entirely solo after deciding to remake a flawed existing system from scratch. Combined Python for hand-recognition, C++ for a physical fish-feeding device, and C# for the Unity simulation — including custom-rigged 3D fish models. Later continued as a junior researcher, publishing in Multimodal Technologies and Interaction and getting covered by Corriere della Sera.",
-        image: "assets/MWWebsite",
+        image: "Assets/MWWebsite.jpg",
         link: "https://www.mdpi.com/2414-4088/8/8/65"
     },
     {
@@ -86,7 +86,7 @@ const projects = [
         blurb: "Took a campus-themed kart racer from art direction through project management to public relations for its stage launch.",
         stats: ["Team project", "Arcade + PC", "Unity"],
         back: "Built for the TU/e Momentum graduation ceremony. I started as designer and artist — recreating the TU/e campus, item boxes, and vehicle models — then moved into project management and UI-focused bug fixing, before taking on public relations with media and the stakeholder Artishock ahead of the live event.",
-        image: "assets/MoKawebsite",
+        image: "Assets/MoKawebsite.jpg",
         link: "https://totemgamedev.com/momentum-kart"
     },
     {
@@ -119,7 +119,7 @@ const projects = [
         blurb: "Directed art and concept for a cooperative ecosystem-balance game built in days for an international game jam.",
         stats: ["Game jam", "2nd place", "AEWT Sydney"],
         back: "Built for the Academic Esports World Tournament in Sydney under tight time pressure. I managed the development team alongside other academic tournament components, while concepting, designing, and creating art for the game's animal icons, environments, and diegetic ecosystem-selection system. Placed 2nd against seven other universities.",
-        image: "assets/BaranyiWebsite",
+        image: "Assets/BaranyiWebsite.jpg",
         link: "https://apps.apple.com/nl/app/baranyi-yagu/id6761786954"
     },
     {
