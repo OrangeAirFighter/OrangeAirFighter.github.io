@@ -538,8 +538,14 @@ img { max-width: 100%; display: block; }
   margin-bottom: 14px;
   background: radial-gradient(circle at 30% 20%, color-mix(in srgb, var(--card-color, var(--orange)) 30%, transparent), transparent 65%), var(--bg-elevated);
   border: 1px solid var(--line);
+  overflow: hidden;
 }
 .pcard-icon svg { width: 46px; height: 46px; stroke: var(--card-color, var(--orange)); }
+.pcard-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .pcard-name { font-size: 1.08rem; font-weight: 700; margin-bottom: 4px; }
 .pcard-role { font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted); margin-bottom: 12px; }
@@ -567,6 +573,27 @@ img { max-width: 100%; display: block; }
 .pcard-back h4 { font-size: 0.95rem; margin-bottom: 8px; color: var(--card-color, var(--orange)); }
 .pcard-back p { font-size: 0.83rem; color: var(--text-muted); margin-bottom: 12px; }
 .pcard-back-name { font-size: 1rem; font-weight: 700; margin-bottom: 10px; }
+
+.pcard-play-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--card-color, var(--orange));
+  border: 1px solid var(--card-color, var(--orange));
+  padding: 7px 12px;
+  border-radius: 6px;
+  margin-top: auto;
+  align-self: flex-start;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.pcard-play-link:hover {
+  background: var(--card-color, var(--orange));
+  color: #0a0a0c;
+}
+.pcard-front .pcard-play-link { margin-bottom: 10px; }
 
 /* ============================================
    QUEST LOG / EXPERIENCE
