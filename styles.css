@@ -595,48 +595,143 @@ img { max-width: 100%; display: block; }
 }
 .pcard-front .pcard-play-link { margin-bottom: 10px; }
 
+```css
 /* ============================================
    QUEST LOG / EXPERIENCE
    ============================================ */
-.experience { background: var(--bg-elevated); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.quest-log {
-  position: relative;
-  padding-left: 28px;
-  border-left: 1px dashed var(--line-bright);
+.experience {
+    background: var(--bg-elevated);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
 }
-.quest { position: relative; padding-bottom: 40px; }
-.quest:last-child { padding-bottom: 0; }
-.quest-marker {
-  position: absolute;
-  left: -34px;
-  top: 4px;
-  width: 12px;
-  height: 12px;
-  border-radius: 3px;
-  background: var(--bg);
-  border: 2px solid var(--line-bright);
-  transform: rotate(45deg);
-}
-.quest.active .quest-marker { border-color: var(--orange); background: var(--orange); box-shadow: 0 0 0 4px rgba(255,92,26,0.15); }
-.quest-status {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.64rem;
-  letter-spacing: 0.08em;
-  color: var(--orange);
-  border: 1px solid var(--orange);
-  padding: 2px 8px;
-  border-radius: 20px;
-  margin-bottom: 10px;
-}
-.quest-body h3 { font-size: 1.15rem; margin-bottom: 4px; }
-.quest-meta { font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-dim); margin-bottom: 10px; }
-.quest-body p:last-child { color: var(--text-muted); font-size: 0.92rem; max-width: 640px; margin-bottom: 0; }
 
+.quest-log {
+    position: relative;
+    padding-left: 28px;
+    border-left: 1px dashed var(--line-bright);
+}
+
+.quest {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+    .quest:last-child {
+        padding-bottom: 0;
+    }
+
+.quest-marker {
+    position: absolute;
+    left: -34px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background: var(--bg);
+    border: 2px solid var(--line-bright);
+    transform: rotate(45deg);
+}
+
+.quest.active .quest-marker {
+    border-color: var(--orange);
+    background: var(--orange);
+    box-shadow: 0 0 0 4px rgba(255, 92, 26, 0.15);
+}
+
+.quest-status {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.64rem;
+    letter-spacing: 0.08em;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.quest-body h3 {
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+}
+
+.quest-meta {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+}
+
+.quest-body p:last-child {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    max-width: 640px;
+    margin-bottom: 0;
+}
+
+
+/* ============================================
+   QUEST CONTENT / IMAGE
+   ============================================ */
+
+.quest-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.quest-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.quest-image {
+    flex: 0 0 260px;
+    width: 260px;
+}
+
+    .quest-image img {
+        display: block;
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 6px;
+        border: 1px solid var(--line);
+    }
+
+
+/* ============================================
+   MOBILE
+   ============================================ */
+
+@media (max-width: 700px) {
+    .quest-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quest-image {
+        width: 100%;
+        flex: none;
+    }
+
+        .quest-image img {
+            height: auto;
+            max-height: 240px;
+        }
+}
+
+```
 /* ============================================
    CONTACT / FOOTER
    ============================================ */
-.contact-inner { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.contact-inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .contact-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
 
 .footer {
