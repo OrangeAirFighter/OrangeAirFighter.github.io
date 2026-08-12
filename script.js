@@ -180,7 +180,7 @@ function renderCards() {
 
     // Image if provided, otherwise fall back to the type icon
     const visual = p.image
-        ? `<img src="${p.image}" alt="${p.name} screenshot" loading="lazy" aspect-ratio: 1>`
+        ? `<img src="${p.image}" alt="${p.name} screenshot" loading="lazy" height="400">`
       : ICONS[primaryType];
 
     // "Play" link if a URL was provided
