@@ -178,10 +178,9 @@ function renderCards() {
     const badges = p.types.map(t => `<span class="type-badge type-${t}">${TYPE_LABEL[t]}</span>`).join('');
     const stats = p.stats.map(s => `<span>${s}</span>`).join('');
 
-    // Image if provided, otherwise fall back to the type icon
     const visual = p.image
-        ? `<img src="${p.image}" alt="${p.name} screenshot" loading="lazy" height="400">`
-      : ICONS[primaryType];
+        ? `<img class="pcard-image" src="${p.image}" alt="${p.name} screenshot" loading="lazy">`
+        : `<div class="pcard-type-icon">${ICONS[primaryType]}</div>`;
 
     // "Play" link if a URL was provided
     const playLink = p.link
