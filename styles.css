@@ -62,7 +62,7 @@ img { max-width: 100%; display: block; }
 .section-inner {
   max-width: var(--container);
   margin: 0 auto;
-  padding: 100px 32px;
+  padding: 60px 32px;
 }
 
 .eyebrow {
@@ -544,7 +544,7 @@ img { max-width: 100%; display: block; }
     /* SVG icon */
     .pcard-icon svg {
         width: 46px;
-        height: 46px;
+        height: 210px;
         flex-shrink: 0;
         stroke: var(--card-color, var(--orange));
     }
@@ -553,7 +553,7 @@ img { max-width: 100%; display: block; }
     .pcard-icon img {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 210px;
         object-fit: cover;
     }
 
@@ -729,7 +729,6 @@ img { max-width: 100%; display: block; }
         }
 }
 
-```
 /* ============================================
    CONTACT / FOOTER
    ============================================ */
