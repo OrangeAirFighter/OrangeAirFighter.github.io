@@ -53,7 +53,7 @@ const projects = [
         blurb: "Designed and built gameplay concepts to communicate concept to university students.",
         stats: ["Team of 5", "Client project","~1 year"],
         back: "An educational game project for TU/e Electrical Engineering. A point-and-click detective game that supports an electromagnetism course. Designed to support an electromagnetism course.",
-        image: "",
+        image: "Assets/ripplesUniGamesImage.jpg",
         link: "https://www.cursor.tue.nl/campus/2026/juni/week-4/start-up-maakt-game-van-struikelvak-elektromagnetisme"
     },
     {
@@ -75,7 +75,7 @@ const projects = [
         blurb: "Research platform making use of nudging to stimulate health conscious behavior through gamification and reward mechanisms.",
         stats: ["Duo project", "~1 year", "Steam"],
         back: "Minigames and a serious game for the GameBus platform. The research platform supports healthier habits and meaningful behaviour change. UniGames is working on game development for the existing platform.",
-        image: "",
+        image: "Assets/gamebusGame.jpg",
         link: "https://blog.gamebus.eu/"
     },
     {
@@ -163,7 +163,7 @@ const projects = [
         blurb: "Short development project using and mentioning concept about political debates featuring current and past political figures.",
         stats: ["Short Cycle", "5-person"],
         back: "Entertainment game of a strategic deck-builder focused on political debates and featuring political figures, made in a very short development cycle and communicates basic debate topics and concepts.",
-        image: "",
+        image: "Assets/VoxPopuliWebsite.jpg",
         link: "https://orangeairfighter.itch.io/vox-populi"
     }
 ];
