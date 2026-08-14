@@ -476,48 +476,6 @@ img { max-width: 100%; display: block; }
 /* ============================================
    PROJECT CARDS
    ============================================ */
-
-/* ============================================
-   PROJECT CARD VISUAL
-============================================ */
-
-.pcard-icon {
-    width: 100%;
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0 auto 18px;
-    border-radius: 10px;
-}
-
-/* Project images */
-.pcard-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    border-radius: 10px;
-}
-
-/* Fallback type icon */
-.pcard-type-icon {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-    .pcard-type-icon svg {
-        width: 80px;
-        height: 80px;
-        max-width: 80px;
-        max-height: 80px;
-    }
-
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
