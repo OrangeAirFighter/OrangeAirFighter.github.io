@@ -141,7 +141,7 @@ const projects = [
         blurb: "A minigame suite that trains balance in children with cerebral palsy through subconscious, game-based repetition.",
         stats: ["TU/e M11 project", "Clinical review", "Unity"],
         back: "Designed with Adelante, a rehabilitation care centre, this project uses progressive minigames to train muscles without requiring the user to focus on the training itself. Reviewed and tested by rehabilitation and technical experts, with the reward and progression systems refined through direct feedback from clients, peers, and coaches.",
-        image: "Assets/Balance,png",
+        image: "Assets/Balance.png",
         link: ""
     },
     {
