@@ -483,7 +483,7 @@ img { max-width: 100%; display: block; }
 }
 .pcard {
   perspective: 1400px;
-  height: 380px;
+  height: 500px;
   cursor: pointer;
 }
 .pcard-inner {
