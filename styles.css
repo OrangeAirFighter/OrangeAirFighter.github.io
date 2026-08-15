@@ -476,134 +476,144 @@ img { max-width: 100%; display: block; }
 /* ============================================
    PROJECT CARDS
    ============================================ */
+
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 26px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
 }
+
 .pcard {
-  perspective: 1400px;
-  height: 500px;
-  cursor: pointer;
+    perspective: 1400px;
+    height: 520px;
+    cursor: pointer;
 }
+
 .pcard-inner {
-  position: relative;
-  width: 100%; height: 100%;
-  transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
+    transform-style: preserve-3d;
 }
-.pcard.flipped .pcard-inner { transform: rotateY(180deg); }
+
+.pcard.flipped .pcard-inner {
+    transform: rotateY(180deg);
+}
 
 .pcard-face {
-  position: absolute;
-  inset: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 14px;
-  border: 1px solid var(--line);
-  background: var(--bg-card);
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 20px 40px -24px rgba(0,0,0,0.7);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    background: var(--bg-card);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 40px -24px rgba(0,0,0,0.7);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
-.pcard:hover .pcard-front { transform: translateY(-4px); }
 
-.pcard-front { border-top: 3px solid var(--card-color, var(--orange)); }
-.pcard-back { transform: rotateY(180deg); border-top: 3px solid var(--card-color, var(--orange)); overflow-y: auto; }
+.pcard:hover .pcard-front {
+    transform: translateY(-4px);
+}
 
-.pcard-type-row { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+.pcard-front {
+    border-top: 3px solid var(--card-color, var(--orange));
+}
+
+.pcard-back {
+    transform: rotateY(180deg);
+    border-top: 3px solid var(--card-color, var(--orange));
+    overflow-y: auto;
+}
+
+.pcard-type-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
 .type-badge {
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 20px;
-  border: 1px solid currentColor;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid currentColor;
 }
-.type-design { color: var(--type-design); }
-.type-software { color: var(--type-software); }
-.type-management { color: var(--type-management); }
-.type-research { color: var(--type-research); }
+
+/* ============================================
+   PROJECT IMAGE
+   ============================================ */
 
 .pcard-icon {
-    height: 100%;
+    width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 14px;
-    background: radial-gradient( circle at 30% 20%, color-mix(in srgb, var(--card-color, var(--orange)) 30%, transparent), transparent 65% ), var(--bg-elevated);
+    background: var(--bg-elevated);
     border: 1px solid var(--line);
     overflow: hidden;
 }
 
-    /* SVG icon */
-    .pcard-icon svg {
-        width: 46px;
-        height: 600px;
-        flex-shrink: 0;
-        stroke: var(--card-color, var(--orange));
-    }
-
-    /* Project image */
+    /* Show the COMPLETE image */
     .pcard-icon img {
         display: block;
         width: 100%;
-        height: 600px;
-        object-fit: cover;
+        height: 100%;
+        object-fit: contain;
     }
 
-.pcard-name { font-size: 1.08rem; font-weight: 700; margin-bottom: 4px; }
-.pcard-role { font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-muted); margin-bottom: 12px; }
-.pcard-blurb { font-size: 0.86rem; color: var(--text-muted); flex: 1; }
+/* ============================================
+   PROJECT TEXT
+   ============================================ */
+
+.pcard-name {
+    font-size: 1.08rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.pcard-role {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.pcard-blurb {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    flex: 1;
+}
 
 .pcard-stats {
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  color: var(--text-dim);
-  border-top: 1px dashed var(--line);
-  padding-top: 10px;
-  margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    color: var(--text-dim);
+    border-top: 1px dashed var(--line);
+    padding-top: 10px;
+    margin-top: 12px;
 }
+
 .pcard-flip-hint {
-  text-align: center;
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  color: var(--text-dim);
-  margin-top: 8px;
-  letter-spacing: 0.06em;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    color: var(--text-dim);
+    margin-top: 8px;
+    letter-spacing: 0.06em;
 }
-
-.pcard-back h4 { font-size: 0.95rem; margin-bottom: 8px; color: var(--card-color, var(--orange)); }
-.pcard-back p { font-size: 0.83rem; color: var(--text-muted); margin-bottom: 12px; }
-.pcard-back-name { font-size: 1rem; font-weight: 700; margin-bottom: 10px; }
-
-.pcard-play-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.04em;
-  color: var(--card-color, var(--orange));
-  border: 1px solid var(--card-color, var(--orange));
-  padding: 7px 12px;
-  border-radius: 6px;
-  margin-top: auto;
-  align-self: flex-start;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-.pcard-play-link:hover {
-  background: var(--card-color, var(--orange));
-  color: #0a0a0c;
-}
-.pcard-front .pcard-play-link { margin-bottom: 10px; }
 
 /* ============================================
    QUEST LOG / EXPERIENCE
