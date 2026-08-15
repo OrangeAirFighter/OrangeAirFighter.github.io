@@ -108,7 +108,7 @@ const projects = [
         blurb: "Designed, cut, wired, and coded a fully custom arcade cabinet to give Totem's games a physical home on campus.",
         stats: ["4–5 months", "Physical build", "Custom software"],
         back: "A ground-up build: custom-cut wooden frame, hand-selected and soldered electronics, a 3D-printed miniature version for reference, and custom software running on the integrated computer. I was involved from component sourcing through final construction, plus painting the side art sourced from student-made games.",
-        image: "",
+        image: "Assets/arcadeMachine.jpg",
         link: ""
     },
     {
@@ -130,7 +130,7 @@ const projects = [
         blurb: "Game focused on stimulating the concept of the university of the future build on a custom interactive table for TU/e Innovation Space",
         stats: ["CBL", "Interactive Table", "Unity"],
         back: "Innovation Station is a collaborative game for a custom build interactive table meant to communicate the concepts of the university of the future while being focused on entertaining and collaborative multiplayer.",
-        image: "",
+        image: "Assets/innoStation.jpeg",
         link: ""
     },
     {
@@ -141,7 +141,7 @@ const projects = [
         blurb: "A minigame suite that trains balance in children with cerebral palsy through subconscious, game-based repetition.",
         stats: ["TU/e M11 project", "Clinical review", "Unity"],
         back: "Designed with Adelante, a rehabilitation care centre, this project uses progressive minigames to train muscles without requiring the user to focus on the training itself. Reviewed and tested by rehabilitation and technical experts, with the reward and progression systems refined through direct feedback from clients, peers, and coaches.",
-        image: "",
+        image: "Assets/Balance,png",
         link: ""
     },
     {
@@ -152,7 +152,7 @@ const projects = [
         blurb: "Led a 12-person squad building a mobile game that teaches high-schoolers about facial-recognition bias, deepfakes, and false positives.",
         stats: ["Team of 12", "1 year", "iOS / Android"],
         back: "A year-long client project for Night of the Nerds, split across mechanics, art, and research departments. I managed the full team and led the art department through two rounds of iteration based on expert and student feedback. Shipped with a companion learning toolkit and a 4TU.school classroom module — published free on both app stores in English and Dutch.",
-        image: "",
+        image: "Assets/eyeTotem.png",
         link: ""
     },
     {
